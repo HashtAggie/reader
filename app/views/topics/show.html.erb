@@ -1,13 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
   <%= @topic.title %>
 </p>
 
-<% @topic.notes.each do |topic| %>
-  <%= note.content %>
+<p>
+    <%= @topic.content %>
+</p>
+
+<h1>Take notes</h1>
+
+<%= form_for @notes.create do |f| %>
+
+      <!-- <%= f.label :content %> -->
+      <%= f.text_field :content %>
+
+      <%= f.submit "Create" %>
+
   <% end %>
+
+  <p>
+    <strong>My notes :</strong>
+    <%= @topic.notes %>
+  </p>
 <!-- <p>
   <strong>Content:</strong>
   <%= @topic.content %>
@@ -18,5 +33,5 @@
   <%= @topic.week %>
 </p> -->
 
-<%= link_to 'Edit', edit_topic_path(@topic) %> |
-<%= link_to 'Back', topics_path %>
+<!-- <%= link_to 'Edit', edit_topic_path(@topic) %> -->
+<!-- <h1>New Contact</h1>

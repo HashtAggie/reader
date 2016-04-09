@@ -39,6 +39,6 @@ topic20 = Topic.create( {title: "ReactJS Intro", content: "Testtesttest"})
 
 week5.topics << [topic20]
 
-note1 = Note.create (content: "")
+note1 = Note.create({content: "Dit is een test om te zien of de notes/content gevuld wordt"})
 
-topic1.notes << note1
+topic1.notes << [note1]
