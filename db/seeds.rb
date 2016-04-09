@@ -1,7 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Week.create( {name: "Week 1"})
+Week.create( {name: "Week 2"})
+Week.create( {name: "Week 3"})
+Week.create( {name: "Week 4"})
+Week.create( {name: "Week 5"})
