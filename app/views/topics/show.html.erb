@@ -5,7 +5,10 @@
   <%= @topic.title %>
 </p>
 
-<p>
+<% @topic.notes.each do |topic| %>
+  <%= note.content %>
+  <% end %>
+<!-- <p>
   <strong>Content:</strong>
   <%= @topic.content %>
 </p>
@@ -13,7 +16,7 @@
 <p>
   <strong>Week:</strong>
   <%= @topic.week %>
-</p>
+</p> -->
 
 <%= link_to 'Edit', edit_topic_path(@topic) %> |
 <%= link_to 'Back', topics_path %>

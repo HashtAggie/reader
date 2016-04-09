@@ -4,6 +4,10 @@
   <strong>Name:</strong>
   <%= @week.name %>
 </p>
+<% @week.topics.each do |topic| %>
+  <%= topic.title %>
+  <%= link_to 'Show', topic %>
+  <% end %>
 
 <%= link_to 'Edit', edit_week_path(@week) %> |
 <%= link_to 'Back', weeks_path %>
